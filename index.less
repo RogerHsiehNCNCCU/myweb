@@ -1,0 +1,49 @@
+.container{
+font-family:Microsoft JhengHei,monospace,fantasy,serif,sans-serif,cursive;
+}
+.border-circle{border-style: solid;border-width: 3px;border-color: black;border-radius: 12px;}
+#wrapper{border-style: solid; border-width: 5px;border-color: green;border-radius: 12px;
+position: absolute;top: 1%;left: 1%; z-index:-1;
+width:98%;height:98%;}
+/*利用margin-top以及margin-left把元素往回推。往回推的數值就是(高/2）以及(寬/2）。如果高是300px，就往回推150px*/
+/*#A{  fill:none}*/
+
+#space{width:2vw;height:auto;}
+.portkey{
+  font-size:6vw;text-align:center;font-weight: 1000;
+  text-shadow: 15px 15px 25px #FFFFFF;z-index:2;
+}
+#t{z-index:2 ;text-align: center; 
+font-size:12vw;.container;font-weight: 1000;font-style: italic;color:greenyellow;
+margin-top:2vh;margin-left:5vw;
+ text-shadow: 15px 15px 25px #000000;}
+#t2{z-index:2;text-align:center;}
+#t2t{font-size:1vw;color:blue;.container;text-decoration:underline;margin-top:-5px;}
+
+.inside{
+  div, span, input , label,option,legend{
+    .container;font-size:4vw;height:9vh;
+	}
+    select,option{.container;font-size:3vw;height:6.5vh;}
+    input{display:none;.border-circle;}
+	label{width:38vw;height:auto;border:3px solid black;
+	      text-align: center;.border-circle;
+		  padding: 10px;font-size:2vw;
+	}
+}
+
+
+@marg:10px;
+.top { margin-top: @marg;}
+.top2 {margin-top:@marg*2;}
+.top3{margin-top:@marg*4;}
+.top4{margin-top:@marg*10;}
+.bottom{margin-bottom: 10px;}
+.left{ margin-left: 10px;}
+.right{ margin-right: 10px;}
+
+.backgd{
+    position:absolute;top:0%;left:0%;
+    width:100%;height:100%;z-index: 0;
+	opacity:0.7;
+}

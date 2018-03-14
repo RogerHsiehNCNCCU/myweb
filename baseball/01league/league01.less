@@ -1,0 +1,76 @@
+.container{
+font-family:Microsoft JhengHei,monospace,fantasy,serif,sans-serif,cursive;
+}
+.border-circle{border-style: solid;border-width: 3px;border-color: black;border-radius: 12px;}
+#wrapper{border-style: solid; border-width: 5px;border-color: green;border-radius: 12px;
+position: absolute;top: 1%;left: 1.5%; z-index:-1;
+width:97%;height:97%;}
+/*利用margin-top以及margin-left把元素往回推。往回推的數值就是(高/2）以及(寬/2）。如果高是300px，就往回推150px*/
+/*#A{  fill:none}*/
+
+#space{width:2vw;height:auto;}
+#t{z-index:2 ;text-align: center; 
+font-size:5.5vw;.container;}
+#t2{z-index:2;text-align:center;}
+#t2t{font-size:1vw;color:blue;.container;text-decoration:underline;margin-top:-5px;}
+
+.nut{width:13%;height:auto;}
+
+.inside{
+  div, span, input , label,option,legend{
+    .container;font-size:4vw;height:9vh;
+	}
+    select,option{.container;font-size:3vw;height:6.5vh;}
+    input{display:none;.border-circle;}
+	label{width:38vw;height:auto;border:3px solid black;
+	      text-align: center;.border-circle;
+		  padding: 10px;font-size:2vw;
+	}
+	.row1{
+	  padding:25px;
+	}
+	a{ 
+	.but{.container;.border-circle;background-color:white;
+         span {font-size:18vw;color:black;}}}
+}
+
+#pre{position:absolute;top:86%;left:0.3%;width:7%;height:auto;z-index:2;cursor:pointer;}
+.back{position:absolute;top:91%;left:1.5%;width:6%;height:auto;z-index:3;cursor:pointer;
+font-size:1.5vw;font-family:Microsoft JhengHei,monospace,fantasy,serif,sans-serif,cursive;
+color:blue;}
+#exit{position:absolute;top:1%;left:1%;width:5%;height:auto;}
+.exitt{position:absolute;top:11.5%;left:2%;z-index:2;
+font-size:1.5vw;.container;color:blue;}
+
+
+@marg:10px;
+.top { margin-top: @marg;}
+.top2 {margin-top:@marg*2;}
+.top3{margin-top:@marg*4;}
+.top4{margin-top:@marg*10;}
+.bottom{margin-bottom: 10px;}
+.left{ margin-left: 10px;}
+.right{ margin-right: 10px;}
+
+#pro{height:3vh;position:absolute;top:93%;}
+#protext{font-size:2.5vh;height:2.5vh;position:relative;top:-10px;}
+
+.coun {
+    width: 6vw;height:auto;
+}
+.confirm{width:17%;height:15%;font-size:3vw;
+position:absolute;top:76%;left:42.5%;
+box-shadow:2px 2px 2px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),6px 6px 12px rgba(20%,20%,40%,0.4);
+text-shadow:3px 3px #cccccc;color:black;}
+.agree{
+  .confirm;left:80%;.border-circle;
+}
+
+.cpbl{width:100%;height:auto;}
+.mlb{width:70%;height:auto;}
+
+.backgd{
+    position:absolute;top:0%;left:0%;
+    width:100%;height:100%;z-index: 0;
+    opacity: 0.5;
+}
